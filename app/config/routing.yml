@@ -1,0 +1,4 @@
+dan_main:
+    resource: "@DanMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
