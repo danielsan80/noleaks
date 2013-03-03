@@ -1,5 +1,5 @@
 {
-    "hash": "3cd21a834c43f46e2a699fb94cc815b9",
+    "hash": "30f5984d95ac6f94236a0430911bead5",
     "packages": [
         {
             "name": "doctrine/common",
@@ -767,6 +767,47 @@
             "time": "2013-02-18 16:17:57"
         },
         {
+            "name": "leafo/lessphp",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "e53c4ebb352c312af6a08dcfe183805dca16b992"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/e53c4ebb352c312af6a08dcfe183805dca16b992",
+                "reference": "e53c4ebb352c312af6a08dcfe183805dca16b992",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2013-03-02 22:57:32"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.4.0",
             "source": {
@@ -1482,7 +1523,7 @@
 
     ],
     "minimum-stability": "alpha",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "leafo/lessphp": 20
+    }
 }
