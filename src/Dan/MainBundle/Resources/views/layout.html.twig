@@ -25,12 +25,13 @@
 {% block body %}
 
     {% block container %}
+        {% block navbar %}
+            {% include 'DanMainBundle::navbar.html.twig' %}
+        {% endblock navbar %}
         <div class="container">
             <div class="content">
-                <div class="row">
                     {% block content %}
                     {% endblock content %}
-                </div>
             </div>
             <footer>
                 {% block footer %}
