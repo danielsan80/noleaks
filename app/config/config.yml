@@ -57,6 +57,8 @@ doctrine:
         user:     %database_user%
         password: %database_password%
         charset:  UTF8
+        types:
+            json: Sonata\Doctrine\Types\JsonType
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: %kernel.root_dir%/data/data.db3
         # path:     %database_path%
@@ -76,4 +78,41 @@ swiftmailer:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Dan\MainBundle\Entity\User
+#    user_class: Dan\MainBundle\Entity\User
+    user_class: Application\Sonata\UserBundle\Entity\User
+    
+    group:
+#        group_class: Dan\MainBundle\Entity\Group
+        group_class: Application\Sonata\UserBundle\Entity\Group
+    
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+
+        sonata.block.service.text:
+        sonata.block.service.rss:
+
+
+sonata_admin:
+    title:      Sonata Project
+    title_logo: /bundles/sonataadmin/logo_title.png
+    templates:
+        # default global templates
+        layout:  SonataAdminBundle::standard_layout.html.twig
+        ajax:    SonataAdminBundle::ajax_layout.html.twig
+
+        # default actions templates, should extend a global templates
+        list:    SonataAdminBundle:CRUD:list.html.twig
+        show:    SonataAdminBundle:CRUD:show.html.twig
+        edit:    SonataAdminBundle:CRUD:edit.html.twig
+
+    dashboard:
+        blocks:
+            # display a dashboard block
+            - { position: left, type: sonata.admin.block.admin_list }
+
+sonata_user:
+    security_acl: true
+    manager_type: orm

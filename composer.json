@@ -26,8 +26,10 @@
         "sonata-project/admin-bundle": "*",
         "sonata-project/cache-bundle": "2.1.*",
         "sonata-project/doctrine-orm-admin-bundle": "2.1.*",
-        "sonata-project/intl-bundle": "2.1.*"
+        "sonata-project/intl-bundle": "2.1.*",
+        "sonata-project/user-bundle": "2.1.*",
         
+        "simplethings/entity-audit-bundle": "*"
     },
     "scripts": {
         "post-install-cmd": [
