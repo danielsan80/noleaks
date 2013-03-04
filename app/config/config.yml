@@ -78,12 +78,10 @@ swiftmailer:
 fos_user:
     db_driver: orm
     firewall_name: main
-#    user_class: Dan\MainBundle\Entity\User
-    user_class: Application\Sonata\UserBundle\Entity\User
+    user_class: Dan\UserBundle\Entity\User
     
     group:
-#        group_class: Dan\MainBundle\Entity\Group
-        group_class: Application\Sonata\UserBundle\Entity\Group
+        group_class: Dan\UserBundle\Entity\Group
     
 sonata_block:
     default_contexts: [cms]
@@ -118,3 +116,6 @@ sonata_admin:
 sonata_user:
     security_acl: true
     manager_type: orm
+    class: 
+        user:               Dan\UserBundle\Entity\User
+        group:              Dan\UserBundle\Entity\Group

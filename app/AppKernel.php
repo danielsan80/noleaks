@@ -32,8 +32,9 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             new Dan\MainBundle\DanMainBundle(),
-            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
-            
+//            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+
+            new Dan\UserBundle\DanUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

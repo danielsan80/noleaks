@@ -1,7 +1,7 @@
 <?php
-namespace Dan\MainBundle\Entity;
+namespace Dan\UserBundle\Entity;
 
-use Application\Sonata\UserBundle\Entity\Group as BaseGroup;
+use Sonata\UserBundle\Entity\BaseGroup as BaseGroup;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -17,9 +17,9 @@ class Group extends BaseGroup
      */
     protected $id;
 
-    public function __construct()
+    public function getId()
     {
-        parent::__construct();
-        // your own logic
+        return $this->id;
     }
+    
 }

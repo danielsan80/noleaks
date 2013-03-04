@@ -1,7 +1,7 @@
 <?php
-namespace Dan\MainBundle\Entity;
+namespace Dan\UserBundle\Entity;
 
-use Application\Sonata\UserBundle\Entity\User as BaseUser;
+use Sonata\UserBundle\Entity\BaseUser as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -17,6 +17,11 @@ class User extends BaseUser
      */
     protected $id;
 
+    public function getId()
+    {
+        return $this->id;
+    }
+    
     public function __construct()
     {
         parent::__construct();
