@@ -28,8 +28,11 @@ class AppKernel extends Kernel
             
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
 
             new Dan\MainBundle\DanMainBundle(),
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
             
         );
 

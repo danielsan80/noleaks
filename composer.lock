@@ -1,5 +1,5 @@
 {
-    "hash": "15193fe882a0d3f971ad1b9d26248fd6",
+    "hash": "1536f075b06634cfaf8975bbd37666c1",
     "packages": [
         {
             "name": "doctrine/common",
@@ -758,12 +758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "df03baa337ae1c87803a7b1a76a393f8a59813f3"
+                "reference": "v1.1.0-alpha4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df03baa337ae1c87803a7b1a76a393f8a59813f3",
-                "reference": "df03baa337ae1c87803a7b1a76a393f8a59813f3",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.0-alpha4",
+                "reference": "v1.1.0-alpha4",
                 "shasum": ""
             },
             "require": {
@@ -2160,6 +2160,7 @@
     "stability-flags": {
         "twig/extensions": 20,
         "kriswallsmith/assetic": 20,
-        "leafo/lessphp": 20
+        "leafo/lessphp": 20,
+        "simplethings/entity-audit-bundle": 20
     }
 }

@@ -107,6 +107,8 @@ sonata_admin:
         list:    SonataAdminBundle:CRUD:list.html.twig
         show:    SonataAdminBundle:CRUD:show.html.twig
         edit:    SonataAdminBundle:CRUD:edit.html.twig
+    security:
+        handler: sonata.admin.security.handler.acl
 
     dashboard:
         blocks:
